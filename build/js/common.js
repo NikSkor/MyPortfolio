@@ -151,7 +151,7 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-eval("// removed by extract-text-webpack-plugin\n\n//////////////////\n// WEBPACK FOOTER\n// ./node_modules/normalize.css/normalize.css\n// module id = 0\n// module chunks = 4\n\n//# sourceURL=webpack:///./node_modules/normalize.css/normalize.css?");
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

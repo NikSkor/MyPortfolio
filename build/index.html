@@ -4,16 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="common/images/favicon.ico">
     <title>index page</title>
   <link href="./css/common.css" rel="stylesheet"><link href="./css/index.css" rel="stylesheet"></head>
   <body>
-    <h1>Главная страница</h1>
-    <form>
-      <label for="email">email</label>
-      <input name="email" id="email">
-      <label for="password">password</label>
-      <input name="password" id="password">
-      <button>Войти</button>
-    </form>
+    <div class="wrapper">
+      <div class="container container__index">
+        <section class="greeting__section section">
+          <div class="authorization-button"><a class="authorization-button__link" href="#">Авторизоваться</a></div>
+          <div class="intro">
+            <div class="intro__owner">
+              <div class="intro__photo"><img class="intro__img" src="common/images/avatar.jpg" alt="Веб-разработчик"></div>
+              <div class="intro__title"> 
+                <h2>Никита Скородумов</h2><span class="intro__text">Личный сайт веб-разработчика</span>
+              </div>
+            </div>
+            <div class="intro__socials">
+              <div class="socials socials__intro">
+                <ul class="social__list">
+                  <li class="social__item"><a class="socials__link socials__link-vk" href="#" target="_blank">
+                      <svg class="social__icon"></svg></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="intro__nav">
+              <div class="menu intro__menu">
+                <ul class="menu__list">
+                  <li class="menu__item menu__item_works">Мои работы</li>
+                  <li class="menu__item menu__item_about">Обо мне</li>
+                  <li class="menu__item menu__item blog">Блог</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="about_text"></div>
+        </section>
+      </div>
+    </div>
   <script type="text/javascript" src="./js/common.js"></script><script type="text/javascript" src="./js/index.js"></script></body>
 </html>

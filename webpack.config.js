@@ -15,16 +15,11 @@ const PATHS = {
 
 let sourcemap, watcher
 
-if (process.env.start) {
+if (process.env.NODE_ENV=='dev') {
     sourcemap = 'source-maps'
-    watcher   = false
-} else {
-    sourcemap = 'eval'
     watcher   = true
 }
 
-console.clear()
-console.log('Build for production started')
 
 module.exports = {
     entry: {           
@@ -81,11 +76,14 @@ module.exports = {
         new StyleLintPlugin({
             configFile: './.stylelintrc'
         }),
+        new webpack.DefinePlugin({
+            "process.env.NODE_ENV":JSON.stringify(process.env.NODE_ENV)
+        }),
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery'
         }),
-//        new UglifyJSPlugin()        
+//      new UglifyJSPlugin()        
     ],
     module: {
         rules: [
@@ -126,10 +124,18 @@ module.exports = {
                 }            
             },
             {
-                test: /\.(jpg|png|svg)$/,
+                test: /\.(jpg|png|svg|ico)$/,
                 loader: 'file-loader',
                 options: {
-                    name: 'images/[name].[ext]'
+                    name: 'common/images/[name].[ext]',
+                    // outputPath:'common/images/'
+                }
+            },
+            {
+                test: /\.(eot|ttf|woff|woff2|eot?#iefix)$/,
+                loader: 'file-loader',
+                options: {
+                    name: 'Fonts/[name].[ext]'
                 }
             }                                    
         ]

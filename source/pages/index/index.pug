@@ -3,10 +3,30 @@ extends ../../base
 block head
     title index page
 block content
-    h1 Главная страница
-    form
-        label(for="email") email
-        input(name="email" id="email")
-        label(for="password") password
-        input(name="password" id="password")
-        button Войти
+    .container.container__index
+        section.greeting__section.section
+            .authorization-button
+                a(href="#" class='authorization-button__link') Авторизоваться
+            .intro
+                .intro__owner
+                    .intro__photo
+                        img(class='intro__img' src=require("../../common/images/avatar.jpg"), alt="Веб-разработчик")
+                    .intro__title 
+                        h2 Никита Скородумов
+                        span.intro__text Личный сайт веб-разработчика
+                .intro__socials
+                    .socials.socials__intro
+                        ul.social__list
+                            li.social__item
+                                a(class='socials__link socials__link-vk' href="#" target='_blank')
+                                    svg.social__icon
+
+
+                .intro__nav
+                    .menu.intro__menu
+                        ul.menu__list
+                            li.menu__item.menu__item_works Мои работы
+                            li.menu__item.menu__item_about Обо мне
+                            li.menu__item.menu__item.blog Блог
+                            
+            .about_text
