@@ -9,22 +9,36 @@
   <link href="./css/common.css" rel="stylesheet"><link href="./css/index.css" rel="stylesheet"></head>
   <body>
     <div class="wrapper">
-      <div class="container container__index">
+      <div class="greeting">
         <section class="greeting__section section">
-          <div class="authorization-button"><a class="authorization-button__link" href="#">Авторизоваться</a></div>
-          <div class="intro">
+          <div class="greeting__button">
+            <button class="authorization-button">Авторизоваться</button>
+          </div>
+          <div class="intro greeting__intro">
             <div class="intro__owner">
-              <div class="intro__photo"><img class="intro__img" src="common/images/avatar.jpg" alt="Веб-разработчик"></div>
-              <div class="intro__title"> 
-                <h2>Никита Скородумов</h2><span class="intro__text">Личный сайт веб-разработчика</span>
+              <div class="intro__card">
+                <div class="intro__photo"><img class="intro__img" src="common/images/avatar.jpg" alt="Веб-разработчик"></div>
+                <div class="intro__title"> 
+                  <h2 class="intro__title title">Никита Скородумов</h2><span class="intro__text">Личный сайт веб-разработчика</span>
+                </div>
               </div>
-            </div>
-            <div class="intro__socials">
-              <div class="socials socials__intro">
-                <ul class="social__list">
-                  <li class="social__item"><a class="socials__link socials__link-vk" href="#" target="_blank">
-                      <svg class="social__icon"></svg></a></li>
-                </ul>
+              <div class="intro__socials">
+                <div class="socials socials__intro">
+                  <ul class="socials__list">
+                    <li class="socials__item"><a class="socials__link" href="" target="_blank">
+                        <svg class="socials__link_icon">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../common/images/sprite.svg#vk"></use>
+                        </svg></a></li>
+                    <li class="socials__item"><a class="socials__link" href="" target="_blank">
+                        <svg class="socials__link_icon">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../common/images/sprite.svg#github"> </use>
+                        </svg></a></li>
+                    <li class="socials__item"><a class="socials__link" href="" target="_blank">
+                        <svg class="socials__link_icon">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../../common/images/sprite.svg#in">            </use>
+                        </svg></a></li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="intro__nav">
@@ -37,7 +51,7 @@
               </div>
             </div>
           </div>
-          <div class="about_text"></div>
+          <div class="greeting__about">               <span class="greeting__text">© Скородумов Никита | Создано с любовью в LoftSchool | 2017</span></div>
         </section>
       </div>
     </div>

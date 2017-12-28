@@ -14,17 +14,6 @@ __webpack_require__(4);
 
 __webpack_require__(5);
 
-var _parallax = __webpack_require__(9);
-
-var _parallax2 = _interopRequireDefault(_parallax);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var f = (0, _parallax2.default)();
-console.log(f);
-var z = document.querySelector('.intro__text');
-z.textContent = f;
-
 /***/ }),
 /* 4 */
 /***/ (function(module, exports) {
@@ -38,7 +27,7 @@ z.textContent = f;
 var pug = __webpack_require__(6);
 
 function template(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_indent = [];
-pug_html = pug_html + "\u003C!DOCTYPE html\u003E\n\u003Chtml lang=\"ru\"\u003E\n  \u003Chead\u003E\n    \u003Cmeta charset=\"UTF-8\"\u003E\n    \u003Cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"\u003E\n    \u003Cmeta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\"\u003E\n    \u003Clink rel=\"icon\" type=\"image\u002Fx-icon\" href=\"common\u002Fimages\u002Ffavicon.ico\"\u003E\n    \u003Ctitle\u003Eindex page\u003C\u002Ftitle\u003E\n  \u003C\u002Fhead\u003E\n  \u003Cbody\u003E\n    \u003Cdiv class=\"wrapper\"\u003E\n      \u003Cdiv class=\"container container__index\"\u003E\n        \u003Csection class=\"greeting__section section\"\u003E\n          \u003Cdiv class=\"authorization-button\"\u003E\u003Ca class=\"authorization-button__link\" href=\"#\"\u003EАвторизоваться\u003C\u002Fa\u003E\u003C\u002Fdiv\u003E\n          \u003Cdiv class=\"intro\"\u003E\n            \u003Cdiv class=\"intro__owner\"\u003E\n              \u003Cdiv class=\"intro__photo\"\u003E\u003Cimg" + (" class=\"intro__img\""+pug.attr("src", __webpack_require__(8), true, true)+" alt=\"Веб-разработчик\"") + "\u003E\u003C\u002Fdiv\u003E\n              \u003Cdiv class=\"intro__title\"\u003E \n                \u003Ch2\u003EНикита Скородумов\u003C\u002Fh2\u003E\u003Cspan class=\"intro__text\"\u003EЛичный сайт веб-разработчика\u003C\u002Fspan\u003E\n              \u003C\u002Fdiv\u003E\n            \u003C\u002Fdiv\u003E\n            \u003Cdiv class=\"intro__socials\"\u003E\n              \u003Cdiv class=\"socials socials__intro\"\u003E\n                \u003Cul class=\"social__list\"\u003E\n                  \u003Cli class=\"social__item\"\u003E\u003Ca class=\"socials__link socials__link-vk\" href=\"#\" target=\"_blank\"\u003E\n                      \u003Csvg class=\"social__icon\"\u003E\u003C\u002Fsvg\u003E\u003C\u002Fa\u003E\u003C\u002Fli\u003E\n                \u003C\u002Ful\u003E\n              \u003C\u002Fdiv\u003E\n            \u003C\u002Fdiv\u003E\n            \u003Cdiv class=\"intro__nav\"\u003E\n              \u003Cdiv class=\"menu intro__menu\"\u003E\n                \u003Cul class=\"menu__list\"\u003E\n                  \u003Cli class=\"menu__item menu__item_works\"\u003EМои работы\u003C\u002Fli\u003E\n                  \u003Cli class=\"menu__item menu__item_about\"\u003EОбо мне\u003C\u002Fli\u003E\n                  \u003Cli class=\"menu__item menu__item blog\"\u003EБлог\u003C\u002Fli\u003E\n                \u003C\u002Ful\u003E\n              \u003C\u002Fdiv\u003E\n            \u003C\u002Fdiv\u003E\n          \u003C\u002Fdiv\u003E\n          \u003Cdiv class=\"about_text\"\u003E\u003C\u002Fdiv\u003E\n        \u003C\u002Fsection\u003E\n      \u003C\u002Fdiv\u003E\n    \u003C\u002Fdiv\u003E\n  \u003C\u002Fbody\u003E\n\u003C\u002Fhtml\u003E";;return pug_html;};
+pug_html = pug_html + "\u003C!DOCTYPE html\u003E\n\u003Chtml lang=\"ru\"\u003E\n  \u003Chead\u003E\n    \u003Cmeta charset=\"UTF-8\"\u003E\n    \u003Cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"\u003E\n    \u003Cmeta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\"\u003E\n    \u003Clink rel=\"icon\" type=\"image\u002Fx-icon\" href=\"common\u002Fimages\u002Ffavicon.ico\"\u003E\n    \u003Ctitle\u003Eindex page\u003C\u002Ftitle\u003E\n  \u003C\u002Fhead\u003E\n  \u003Cbody\u003E\n    \u003Cdiv class=\"wrapper\"\u003E\n      \u003Cdiv class=\"greeting\"\u003E\n        \u003Csection class=\"greeting__section section\"\u003E\n          \u003Cdiv class=\"greeting__button\"\u003E\n            \u003Cbutton class=\"authorization-button\"\u003EАвторизоваться\u003C\u002Fbutton\u003E\n          \u003C\u002Fdiv\u003E\n          \u003Cdiv class=\"intro greeting__intro\"\u003E\n            \u003Cdiv class=\"intro__owner\"\u003E\n              \u003Cdiv class=\"intro__card\"\u003E\n                \u003Cdiv class=\"intro__photo\"\u003E\u003Cimg" + (" class=\"intro__img\""+pug.attr("src", __webpack_require__(8), true, true)+" alt=\"Веб-разработчик\"") + "\u003E\u003C\u002Fdiv\u003E\n                \u003Cdiv class=\"intro__title\"\u003E \n                  \u003Ch2 class=\"intro__title title\"\u003EНикита Скородумов\u003C\u002Fh2\u003E\u003Cspan class=\"intro__text\"\u003EЛичный сайт веб-разработчика\u003C\u002Fspan\u003E\n                \u003C\u002Fdiv\u003E\n              \u003C\u002Fdiv\u003E\n              \u003Cdiv class=\"intro__socials\"\u003E\n                \u003Cdiv class=\"socials socials__intro\"\u003E\n                  \u003Cul class=\"socials__list\"\u003E\n                    \u003Cli class=\"socials__item\"\u003E\u003Ca class=\"socials__link\" href=\"\" target=\"_blank\"\u003E\n                        \u003Csvg class=\"socials__link_icon\"\u003E\n                          \u003Cuse xmlns:xlink=\"http:\u002F\u002Fwww.w3.org\u002F1999\u002Fxlink\" xlink:href=\"..\u002F..\u002Fcommon\u002Fimages\u002Fsprite.svg#vk\"\u003E\u003C\u002Fuse\u003E\n                        \u003C\u002Fsvg\u003E\u003C\u002Fa\u003E\u003C\u002Fli\u003E\n                    \u003Cli class=\"socials__item\"\u003E\u003Ca class=\"socials__link\" href=\"\" target=\"_blank\"\u003E\n                        \u003Csvg class=\"socials__link_icon\"\u003E\n                          \u003Cuse xmlns:xlink=\"http:\u002F\u002Fwww.w3.org\u002F1999\u002Fxlink\" xlink:href=\"..\u002F..\u002Fcommon\u002Fimages\u002Fsprite.svg#github\"\u003E \u003C\u002Fuse\u003E\n                        \u003C\u002Fsvg\u003E\u003C\u002Fa\u003E\u003C\u002Fli\u003E\n                    \u003Cli class=\"socials__item\"\u003E\u003Ca class=\"socials__link\" href=\"\" target=\"_blank\"\u003E\n                        \u003Csvg class=\"socials__link_icon\"\u003E\n                          \u003Cuse xmlns:xlink=\"http:\u002F\u002Fwww.w3.org\u002F1999\u002Fxlink\" xlink:href=\"..\u002F..\u002Fcommon\u002Fimages\u002Fsprite.svg#in\"\u003E            \u003C\u002Fuse\u003E\n                        \u003C\u002Fsvg\u003E\u003C\u002Fa\u003E\u003C\u002Fli\u003E\n                  \u003C\u002Ful\u003E\n                \u003C\u002Fdiv\u003E\n              \u003C\u002Fdiv\u003E\n            \u003C\u002Fdiv\u003E\n            \u003Cdiv class=\"intro__nav\"\u003E\n              \u003Cdiv class=\"menu intro__menu\"\u003E\n                \u003Cul class=\"menu__list\"\u003E\n                  \u003Cli class=\"menu__item menu__item_works\"\u003EМои работы\u003C\u002Fli\u003E\n                  \u003Cli class=\"menu__item menu__item_about\"\u003EОбо мне\u003C\u002Fli\u003E\n                  \u003Cli class=\"menu__item menu__item blog\"\u003EБлог\u003C\u002Fli\u003E\n                \u003C\u002Ful\u003E\n              \u003C\u002Fdiv\u003E\n            \u003C\u002Fdiv\u003E\n          \u003C\u002Fdiv\u003E\n          \u003Cdiv class=\"greeting__about\"\u003E               \u003Cspan class=\"greeting__text\"\u003E© Скородумов Никита | Создано с любовью в LoftSchool | 2017\u003C\u002Fspan\u003E\u003C\u002Fdiv\u003E\n        \u003C\u002Fsection\u003E\n      \u003C\u002Fdiv\u003E\n    \u003C\u002Fdiv\u003E\n  \u003C\u002Fbody\u003E\n\u003C\u002Fhtml\u003E";;return pug_html;};
 module.exports = template;
 
 /***/ }),
@@ -313,22 +302,6 @@ function pug_rethrow(err, filename, lineno, str){
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "common/images/avatar.jpg";
-
-/***/ }),
-/* 9 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = frost;
-function frost() {
-  var x = 'Privet';
-  return x;
-}
 
 /***/ })
 ],[3]);

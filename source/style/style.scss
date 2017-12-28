@@ -1,2 +1,8 @@
+$black: #cecbcb;
+$white: #ffffff;
+$grey: #999999;
+$blue: #083c96;
+
 @import './_fonts.scss';
+@import './_base.scss';
 @import './pages/index/_index.scss';
