@@ -6,6 +6,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 //const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 //const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+var SvgStore = require('webpack-svgstore-plugin');
 
 
 const PATHS = {
@@ -83,6 +84,15 @@ module.exports = {
             $: 'jquery',
             jQuery: 'jquery'
         }),
+        new SvgStore({
+            // svgo options 
+            svgoOptions: {
+              plugins: [
+                { removeTitle: false }
+              ]
+            },
+            // prefix: 'icon'
+          })
 //      new UglifyJSPlugin()        
     ],
     module: {

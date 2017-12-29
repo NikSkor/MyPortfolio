@@ -1,7 +1,11 @@
 import 'normalize.css';
 import '../../style/style.scss';
 import './index.pug';
+import '../../scripts/sprites.js';
+
+
 // import frost from '../../scripts/parallax';
+
 
 
 // const f = frost();
