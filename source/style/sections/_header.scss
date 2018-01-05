@@ -1,0 +1,19 @@
+.header {
+    background: url('../common/images/bg-pages.png') no-repeat center/cover;
+    background-color: lightblue;
+    width: 100vw;
+}
+.header__down {
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 0;
+    top: 35%;
+}
+.header__bg {
+    width: 100%;
+    height: 20vh;
+}
+.header__triangle_left, .header__triangle_right {
+    fill: $cream;
+}

@@ -12,23 +12,23 @@ block content
                     .intro__card
                         .intro__photo
                             img(class='intro__img' src=require("../../common/images/avatar.jpg"), alt="Веб-разработчик")
-                        .intro__title 
-                            h2.intro__title.title Никита Скородумов
+                        .intro__about 
+                            h2.intro__title Никита Скородумов
                             span.intro__text Личный сайт веб-разработчика
                     .intro__socials
-                        .socials.socials__intro
+                        .socials__intro
                             ul.socials__list
                                 li.socials__item
                                     a.socials__link(href="https://vk.com", target='_blank')
-                                        svg.socials__link_icon(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                        svg.socials__icon.socials__icon-intro(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
                                             use(xlink:href="#icon-vk" style="width: 100%;")
                                 li.socials__item
                                     a.socials__link(href="https://vk.com", target='_blank')
-                                        svg.socials__link_icon(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                        svg.socials__icon.socials__icon-intro(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
                                             use(xlink:href="#icon-github" style="width: 100%;")
                                 li.socials__item
                                     a.socials__link(href="https://vk.com", target='_blank')
-                                        svg.socials__link_icon(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                        svg.socials__icon.socials__icon-intro(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
                                             use(xlink:href="#icon-in" style="width: 100%;")
                                 //- li.socials__item
                                 //-     a.socials__link(href="", target='_blank')
@@ -41,8 +41,11 @@ block content
                 .intro__nav
                     .menu.intro__menu
                         ul.menu__list
-                            li.menu__item.menu__item_works Мои работы
-                            li.menu__item.menu__item_about Обо мне
-                            li.menu__item.menu__item.blog Блог
+                            li.menu__item.menu__item_works 
+                                a.menu__link(href="./my-works.html") Мои работы
+                            li.menu__item.menu__item_about 
+                                a.menu__link(href="./about.html") Обо мне
+                            li.menu__item.menu__item.blog 
+                                a.menu__link(href="./blog.html") Блог
             .greeting__about
-                span.greeting__text © Скородумов Никита | Создано с любовью в LoftSchool | 2017
+                span.greeting__text © Скородумов Никита | Создано с любовью в LoftSchool | 2018
