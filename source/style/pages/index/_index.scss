@@ -84,6 +84,9 @@
     display: block;
     
 }
+.intro__socials {
+    margin-top: 30px;
+}
 .intro__nav {
     align-self: stretch;
 }
@@ -129,14 +132,25 @@
     font-size: 16px;
     color: rgba(255, 255, 255, .6);
 }
+.socials__item {
+    margin-right: 25px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
 .socials__list {
     display: flex;
+}
+.socials__link {
+    display: block;
 }
 .socials__link_icon {
     width: 30px;
     height: 20px;
-    fill: #585858;
-    // stroke: black;
-    stroke-width: 2px;
-    margin-right: 25px;    
+    fill: #0a44aa;
+    fill-opacity: .5;
+    &:hover {
+        fill: #004cd1;
+        fill-opacity: 1;
+    }
 }
