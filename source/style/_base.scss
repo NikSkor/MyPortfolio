@@ -39,6 +39,17 @@ h1,h2,h3,h4,h5,h6 {
         "blockContent"
         "blockFooter"
 }
+.large-container {
+    display: grid;
+    $col-template: '1fr';
+    $row-template: '600px 1fr 180px';
+    grid-template-columns: #{$col-template};
+    grid-template-rows: #{$row-template};
+    grid-template-areas:
+        "blockHeader"
+        "blockContent"
+        "blockFooter"
+}
 .header {
     grid-area: blockHeader;
     position: relative;

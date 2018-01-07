@@ -3,8 +3,8 @@ extends ../../base
 block head
     title Мои работы
 block content
-    .container.blog-container
-        header.header.blog-header
+    .container.large-container
+        header.header
             .socials
                 ul.socials__list
                     li.socials__item
@@ -23,17 +23,70 @@ block content
                 .hamburger__line-block(id='LineBlock')
                     span.hamburger-menu__line(id='line_1')
                     span.hamburger-menu__line(id='line_2')
-                    span.hamburger-menu__line(id='line_3')  
-            .owner-block
+                    span.hamburger-menu__line(id='line_3')
+            .arrow-down.works__arrow
+                a.arrow__link(href="#")
+                    svg.arrow__svg(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                        use(xlink:href="#icon-arrow_down" style="width: 100%;")
+            .owner-block.works__owner
                 .intro__card
                         .intro__photo
                             img(class='intro__img' src=require("../../common/images/avatar.jpg"), alt="Веб-разработчик")
                         svg.owner__bg(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
                                 use(xlink:href="#icon-stars1" style="width: 100%; min-height:100%;" class='owner__stars')
                         .intro__title 
-                            h2.title-owner Блог
-                            span.intro__text Статьи, которые я написал
-            .header__down
-                svg.header__bg(xmlns="http://www.w3.org/2000/svg",viewBox="0 0 1000 85",preserveAspectRatio="none")
-                    polygon.header__triangle_left(points="0,0 0,86 500.8,86 500.8,75.5")
-                    polygon.header__triangle_right(points="1000,0 1000,86 500,86 500,75.5")
+                            h2.intro__title Скородумов Никита
+                            span.intro__text Личный сайт веб-разработчика
+            .down
+                svg.down__bg(xmlns="http://www.w3.org/2000/svg",viewBox="0 0 1000 85",preserveAspectRatio="none")
+                        polygon.down__triangle_left(points="0,0 0,86 500.8,86 500.8,75.5")
+                        polygon.down__triangle_right(points="1000,0 1000,86 500,86 500,75.5")
+                .down-block
+                    h2.down__title Мои работы
+        section.works-content
+            .works__block
+                .works__left
+                    .works__promotion.promotion
+                        h3.promotion__title
+                        span.promotion__tech
+                        button.promotion__button.prombutton
+                            svg.
+                            span.prombutton__text
+                .works__right
+            .works__review
+        footer.footer
+            .footer__container
+                .footer__col.footer__col_left
+                    p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. 
+                .footer__col.footer__col_center
+                    .footer__nav.nav
+                        ul.nav__list
+                            li.nav__item.nav__item_footer
+                            a.nav__link(href="./my-works.html") Мои работы
+                            li.nav__item.nav__item_footer
+                            a.nav__link(href="./about.html") Обо мне
+                            li.nav__item.nav__item_footer
+                            a.nav__link(href="./blog.html") Блог
+                            li.nav__item.nav__item_footer
+                            a.nav__link(href="./index.html") Авторизация
+                    .footer__socials
+                        ul.socials__list
+                            li.socials__item
+                                a.socials__link(href="https://vk.com", target='_blank')
+                                    svg.socials__icon.socials__icon_footer(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                        use(xlink:href="#icon-vk" style="width: 100%;")
+                            li.socials__item
+                                a.socials__link(href="https://vk.com", target='_blank')
+                                    svg.socials__icon.socials__icon_footer(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                        use(xlink:href="#icon-github" style="width: 100%;")
+                            li.socials__item
+                                a.socials__link(href="https://vk.com", target='_blank')
+                                    svg.socials__icon.socials__icon_footer(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                        use(xlink:href="#icon-in" style="width: 100%;")
+                .footer__col.footer__col_right
+                    ul.footer__contacts
+                        li.footer__contacts-item skype_floriel1
+                        li.footer__contacts-item mr-zerx@yandex.ru
+                        li.footer__contacts-item +79223057956
+                        li.footer__contacts-item г. Пермь        
+            p.footer__copyright.copyright © Скородумов Никита | Создано с любовью в LoftSchool | 2018

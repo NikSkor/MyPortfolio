@@ -3,6 +3,8 @@
     background-color: lightblue;
     // width: 100vw;
     position: relative;
+    display: flex;
+    align-items: flex-end;
 }
 .header__down {
     position: absolute;
@@ -10,6 +12,9 @@
     right: 0;
     font-size: 0;
     top: 51%;
+}
+.header__down_large {
+    top: 68%;
 }
 .header__bg {
     width: 100%;
