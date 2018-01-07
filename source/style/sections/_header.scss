@@ -1,14 +1,15 @@
 .header {
     background: url('../common/images/bg-pages.png') no-repeat center/cover;
     background-color: lightblue;
-    width: 100vw;
+    // width: 100vw;
+    position: relative;
 }
 .header__down {
     position: absolute;
     left: 0;
     right: 0;
     font-size: 0;
-    top: 35%;
+    top: 51%;
 }
 .header__bg {
     width: 100%;

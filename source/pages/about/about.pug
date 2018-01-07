@@ -3,5 +3,187 @@ extends ../../base
 block head
     title Обо мне
 block content
-    h1 Обо мне
-    h2 Проекты
+    .container.blog-container
+        header.header
+            .socials
+                ul.socials__list
+                    li.socials__item
+                        a.socials__link(href="https://vk.com", target='_blank')
+                            svg.socials__icon(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                use(xlink:href="#icon-vk" style="width: 100%;")
+                    li.socials__item
+                        a.socials__link(href="https://vk.com", target='_blank')
+                            svg.socials__icon(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                use(xlink:href="#icon-github" style="width: 100%;")
+                    li.socials__item
+                        a.socials__link(href="https://vk.com", target='_blank')
+                            svg.socials__icon(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                use(xlink:href="#icon-in" style="width: 100%;")
+            .hamburger-menu(id='hamburgerButton')
+                .hamburger__line-block(id='LineBlock')
+                    span.hamburger-menu__line(id='line_1')
+                    span.hamburger-menu__line(id='line_2')
+                    span.hamburger-menu__line(id='line_3')
+            .arrow-down
+                a.arrow__link(href="#")
+                    svg.arrow__svg(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                        use(xlink:href="#icon-arrow_down" style="width: 100%;")
+            .owner-block
+                .intro__card
+                        .intro__photo
+                            img(class='intro__img' src=require("../../common/images/avatar.jpg"), alt="Веб-разработчик")
+                        svg.owner__bg(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                use(xlink:href="#icon-stars1" style="width: 100%; min-height:100%;" class='owner__stars')
+                        .intro__title 
+                            h2.intro__title Скородумов Никита
+                            span.intro__text Личный сайт веб-разработчика
+            .header__down
+                svg.header__bg(xmlns="http://www.w3.org/2000/svg",viewBox="0 0 1000 85",preserveAspectRatio="none")
+                    polygon.header__triangle_left.header-about__triangle_left(points="0,0 0,86 500.8,86 500.8,75.5")
+                    polygon.header__triangle_right.header-about__triangle_right(points="1000,0 1000,86 500,86 500,75.5")
+        section.about-content
+            .about__block
+                .about__left
+                    .about__left-title
+                        h1.about__title Обо мне
+                        svg.about__title_bg(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                use(xlink:href="#icon-stars2" style="width: 100%; min-height:100%;" class='about__stars')
+                    .about__left-content
+                        .about__left_img
+                            img.about__img( src=require("../../common/images/avatar2.jpg"), alt="Веб-разработчик")
+                        .about__left_info
+                            h2.about__title.about__left_title Кто я
+                        .about__left_text
+                            p Я веб разработчик из Перми. Мне 29 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                            p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+                .about__right
+                    .about__right_own
+                        h2.about__right_title Чем я могу быть вам полезен
+                    .about__right_text
+                        p Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
+                    .about__right-content.skills
+                        ul.skills__list
+                            li.skills__list_item
+                                .skills__block
+                                    h3.skills__title Frontend
+                                    ul.skills__block_list.circle
+                                        li.circle__item
+                                            svg.circle__svg(viewBox="0 0 110 110")
+                                                circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
+                                                circle.circle__second.circle-70(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
+                                            span.circle__title HTML 5
+                                        li.circle__item
+                                            svg.circle__svg(viewBox="0 0 110 110")
+                                                circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
+                                                circle.circle__second.circle-60(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
+                                            span.circle__title CSS3
+                                        li.circle__item
+                                            svg.circle__svg(viewBox="0 0 110 110")
+                                                circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
+                                                circle.circle__second.circle-20(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
+                                            span.circle__title JavaScript & JQuery
+                            li.skills__list_item
+                                .skills__block
+                                    h3.skills__title Backend
+                                    ul.skills__block_list.circle
+                                        li.circle__item
+                                            svg.circle__svg(viewBox="0 0 110 110")
+                                                circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
+                                                circle.circle__second.circle-5(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
+                                            span.circle__title PHP
+                                        li.circle__item
+                                            svg.circle__svg(viewBox="0 0 110 110")
+                                                circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
+                                                circle.circle__second.circle-30(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
+                                            span.circle__title mySQL
+                                        li.circle__item
+                                            svg.circle__svg(viewBox="0 0 110 110")
+                                                circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
+                                                circle.circle__second.circle-40(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
+                                            span.circle__title Node.js & npm
+                                        li.circle__item
+                                            svg.circle__svg(viewBox="0 0 110 110")
+                                                circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
+                                                circle.circle__second.circle-5(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
+                                            span.circle__title Mongo.db
+                            li.skills__list_item
+                                .skills__block
+                                    h3.skills__title WorkFlow
+                                    ul.skills__block_list.circle
+                                        li.circle__item
+                                            svg.circle__svg(viewBox="0 0 110 110")
+                                                circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
+                                                circle.circle__second.circle-50(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
+                                            span.circle__title Git
+                                        li.circle__item
+                                            svg.circle__svg(viewBox="0 0 110 110")
+                                                circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
+                                                circle.circle__second.circle-40(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
+                                            span.circle__title Webpack
+                                        li.circle__item
+                                            svg.circle__svg(viewBox="0 0 110 110")
+                                                circle.circle__first(r="45" cx="50%" cy="50%" fill="none")
+                                                circle.circle__second.circle-5(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
+                                            span.circle__title Bower   
+            .about-map.map
+                .map__contacts
+                    .map__info
+                        h2.about__title.map__title Контакты
+                    .map__info
+                        ul.map__list
+                            li.map__item
+                                .map__contact-block
+                                    svg.map__icon(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                        use(xlink:href="#icon-skype_n" style="width: 100%;")
+                                    a.map__owner(href="skype:skype_floriel1") skype_floriel1
+                            li.map__item
+                                .map__contact-block
+                                    svg.map__icon(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                        use(xlink:href="#icon-phone_n" style="width: 100%;")
+                                    a.map__owner(href="tel: +7 922 30 57 956") +7 922 30 57 956
+                            li.map__item
+                                .map__contact-block
+                                    svg.map__icon(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                        use(xlink:href="#icon-envelope_n" style="width: 100%;")
+                                    a.map__owner(href="mailto:mr-zerx@yandex.ru") mr-zerx@yandex.ru
+                            li.map__item
+                                .map__contact-block
+                                    svg.map__icon(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                        use(xlink:href="#icon-map_n" style="width: 100%;")
+                                    a.map__owner(href="#Пермь") г. Пермь
+        footer.footer
+            .footer__container
+                .footer__col.footer__col_left
+                    p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. 
+                .footer__col.footer__col_center
+                    .footer__nav.nav
+                        ul.nav__list
+                            li.nav__item.nav__item_footer
+                            a.nav__link(href="./my-works.html") Мои работы
+                            li.nav__item.nav__item_footer
+                            a.nav__link(href="./about.html") Обо мне
+                            li.nav__item.nav__item_footer
+                            a.nav__link(href="./blog.html") Блог
+                            li.nav__item.nav__item_footer
+                            a.nav__link(href="./index.html") Авторизация
+                    .footer__socials
+                        ul.socials__list
+                            li.socials__item
+                                a.socials__link(href="https://vk.com", target='_blank')
+                                    svg.socials__icon.socials__icon_footer(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                        use(xlink:href="#icon-vk" style="width: 100%;")
+                            li.socials__item
+                                a.socials__link(href="https://vk.com", target='_blank')
+                                    svg.socials__icon.socials__icon_footer(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                        use(xlink:href="#icon-github" style="width: 100%;")
+                            li.socials__item
+                                a.socials__link(href="https://vk.com", target='_blank')
+                                    svg.socials__icon.socials__icon_footer(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                        use(xlink:href="#icon-in" style="width: 100%;")
+                .footer__col.footer__col_right
+                    ul.footer__contacts
+                        li.footer__contacts-item skype_floriel1
+                        li.footer__contacts-item mr-zerx@yandex.ru
+                        li.footer__contacts-item +79223057956
+                        li.footer__contacts-item г. Пермь        
+            p.footer__copyright.copyright © Скородумов Никита | Создано с любовью в LoftSchool | 2018

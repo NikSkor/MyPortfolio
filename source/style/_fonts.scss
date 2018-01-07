@@ -160,3 +160,22 @@ $path:'../Fonts/';
     font-style: normal;
 
 }
+@font-face {
+    font-family: "SansusWebissimoRegular";
+    src: url($path+ "SansusWebissimoRegular/SansusWebissimoRegular.eot");
+    src: url($path+"SansusWebissimoRegular/SansusWebissimoRegular.eot?#iefix")format("embedded-opentype"),
+    url($path+"SansusWebissimoRegular/SansusWebissimoRegular.woff") format("woff"),
+    url($path+"SansusWebissimoRegular/SansusWebissimoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "SansusWebissimoItalic";
+    src: url($path+"SansusWebissimoItalic/SansusWebissimoItalic.eot");
+    src: url($path+"SansusWebissimoItalic/SansusWebissimoItalic.eot?#iefix")format("embedded-opentype"),
+    url($path+"SansusWebissimoItalic/SansusWebissimoItalic.woff") format("woff"),
+    url($path+"SansusWebissimoItalic/SansusWebissimoItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

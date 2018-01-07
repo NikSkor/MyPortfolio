@@ -1,4 +1,4 @@
-$black: #cecbcb;
+$black: #000000;
 $white: #ffffff;
 $grey: #999999;
 $blue: #083c96;
@@ -14,4 +14,6 @@ $cream: #faf8f0;
 @import './sections/_owner.scss';
 @import './pages/index/_index.scss';
 @import './pages/blog/_blog.scss';
+@import './pages/about/_about.scss';
+
 
