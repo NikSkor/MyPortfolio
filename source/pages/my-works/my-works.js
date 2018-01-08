@@ -1,2 +1,5 @@
 import 'normalize.css';
-import './my-works.scss';
+import '../../style/style.scss';
+import './my-works.pug';
+import '../../scripts/sprites.js';
+

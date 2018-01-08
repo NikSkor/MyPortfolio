@@ -1,0 +1,55 @@
+.owner-block {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.title-owner {
+    font-family: 'sansus_webissimoregular';
+    font-size: 63px;
+}
+.intro__photo {
+    width: 142px;
+    height: 142px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 15px;
+    z-index: 100;
+}
+.intro__img {
+    max-width: 100%;
+    display: block;
+    z-index: 100;
+}
+.intro__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.intro__text {
+    font-family: 'robotoregular';
+    font-size: 16px;
+}
+.intro__title, .intro__text {
+    color: $white;
+    text-align: center;
+    z-index: 100;
+}
+.owner__bg {
+    width: 445px;
+    height: 300px;
+    fill: $white;
+    opacity: .2;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    transition: .5s;
+    &:hover {
+        opacity: 1;
+    }
+}
+.owner__stars {
+    z-index: 10;
+}

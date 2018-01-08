@@ -3,4 +3,164 @@ extends ../../base
 block head
     title Мои работы
 block content
-    h1 Мои работы
+    .container.large-container
+        header.header
+            .socials
+                ul.socials__list
+                    li.socials__item
+                        a.socials__link(href="https://vk.com", target='_blank')
+                            svg.socials__icon(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                use(xlink:href="#icon-vk" style="width: 100%;")
+                    li.socials__item
+                        a.socials__link(href="https://vk.com", target='_blank')
+                            svg.socials__icon(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                use(xlink:href="#icon-github" style="width: 100%;")
+                    li.socials__item
+                        a.socials__link(href="https://vk.com", target='_blank')
+                            svg.socials__icon(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                use(xlink:href="#icon-in" style="width: 100%;")
+            .hamburger-menu(id='hamburgerButton')
+                .hamburger__line-block(id='LineBlock')
+                    span.hamburger-menu__line(id='line_1')
+                    span.hamburger-menu__line(id='line_2')
+                    span.hamburger-menu__line(id='line_3')
+            .arrow-down.works__arrow
+                a.arrow__link(href="#")
+                    svg.arrow__svg(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                        use(xlink:href="#icon-arrow_down" style="width: 100%;")
+            .owner-block.works__owner
+                .intro__card
+                        .intro__photo
+                            img(class='intro__img' src=require("../../common/images/avatar.jpg"), alt="Веб-разработчик")
+                        svg.owner__bg(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                use(xlink:href="#icon-stars1" style="width: 100%; min-height:100%;" class='owner__stars')
+                        .intro__title 
+                            h2.intro__title Скородумов Никита
+                            span.intro__text Личный сайт веб-разработчика
+            .down
+                svg.down__bg(xmlns="http://www.w3.org/2000/svg",viewBox="0 0 1000 85",preserveAspectRatio="none")
+                        polygon.down__triangle_left(points="0,0 0,86 500.8,86 500.8,75.5")
+                        polygon.down__triangle_right(points="1000,0 1000,86 500,86 500,75.5")
+                .down-block
+                    h2.down__title Мои работы
+                    .title__pic
+                        svg.title__svg(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                use(xlink:href="#icon-stars2" style="width: 100%;")
+        section.works-content
+            .works__block
+                .works__left
+                    .works__promotion.promotion
+                        h3.promotion__title Сайт школы онлайн образования
+                        span.promotion__tech html, css, javascript
+                        button.promotion__button.prombutton
+                            svg.prombutton__svg(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                use(xlink:href="#icon-link" style="width: 100%;")
+                            span.prombutton__text Посмотреть сайт
+                .works__right.slider
+                    .slider__menu
+                        .slider__big
+                            .slider__pic
+                                img(class='slider__big_one' src=require("../../common/images/work-2.png"), alt="Сайт")
+                        .slider__control
+                            .slider__down
+                                a.slider__button.slider__button_down(href="#")
+                                    svg.slider__arrow(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                        use(xlink:href="#icon-arrow_down" style="width: 100%;")
+                                ul.slider__list
+                                    li.slider__item.slider__item_on
+                                        img(class='slider__img' src=require("../../common/images/work-1.png"), alt="Сайт")
+                                    li.slider__item
+                                        img(class='slider__img' src=require("../../common/images/work-2.png"), alt="Сайт")
+                                    li.slider__item
+                                        img(class='slider__img' src=require("../../common/images/work-3.png"), alt="Сайт")
+                                    li.slider__item
+                                        img(class='slider__img' src=require("../../common/images/work-4.png"), alt="Сайт")
+                            .slider__up
+                                a.slider__button.slider__button_up(href="#")
+                                    svg.slider__arrow(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                        use(xlink:href="#icon-arrow_down" style="width: 100%;")
+                                ul.slider__list
+                                    li.slider__item
+                                        img(class='slider__img' src=require("../../common/images/work-1.png"), alt="Сайт")
+                                    li.slider__item
+                                        img(class='slider__img' src=require("../../common/images/work-2.png"), alt="Сайт")
+                                    li.slider__item
+                                        img(class='slider__img' src=require("../../common/images/work-3.png"), alt="Сайт")
+                                    li.slider__item.slider__item_on
+                                        img(class='slider__img' src=require("../../common/images/work-4.png"), alt="Сайт")
+            .works__review.review
+                .review__about-me
+                    h2.down__title.review__title Что обо мне говорят
+                    svg.review__svg(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                use(xlink:href="#icon-stars3" style="width: 100%;")
+                .review_comments.comments
+                    ul.comments__list
+                        li.comments__item
+                            .comments__pic
+                                img.comments__img(src=require("../../common/images/koval_1.png"), alt="Сайт")
+                            .comments__text.comtext
+                                p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 5 месяцев только самых тяжелых испытаний и бессонных ночей!
+                                span.comtext__name Ковальчук Дмитрий
+                                span.comtext__position - основатель Loftschool
+                        li.comments__item
+                            .comments__pic
+                                img.comments__img(src=require("../../common/images/sab.jpg"), alt="Сайт")
+                            .comments__text.comtext
+                                p Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                                span.comtext__name Сабанцев Владимир
+                                span.comtext__position - преподаватель
+
+                .review_form.form
+                    .form__block
+                        .form__rows
+                            .form__up
+                                h2.form__title связаться со мной
+                            .form__input
+                                input.form__input-text(type="text" id="name" name="name" placeholder="Ваше имя")
+                            .form__input
+                                input.form__input-text(type="text" id="email" name="email" placeholder="Ваш e-mail")
+                            .form__input
+                                textarea.form__input-text.form__input-textarea(type="textarea" id="message" name="message" placeholder="Ваше сообщение")
+                        .form__buttons
+                            button.form__btn.form__btn_send(type="submit") Отправить
+                            button.form__btn.form__btn_clear(type="reset") Очистить
+                .rev-arrow
+                    a.rev-arrow__link
+                        svg.arrow__svg(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                            use(xlink:href="#icon-arrow_down" style="width: 100%;")
+        footer.footer
+            .footer__container
+                .footer__col.footer__col_left
+                    p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. 
+                .footer__col.footer__col_center
+                    .footer__nav.nav
+                        ul.nav__list
+                            li.nav__item.nav__item_footer
+                            a.nav__link(href="./my-works.html") Мои работы
+                            li.nav__item.nav__item_footer
+                            a.nav__link(href="./about.html") Обо мне
+                            li.nav__item.nav__item_footer
+                            a.nav__link(href="./blog.html") Блог
+                            li.nav__item.nav__item_footer
+                            a.nav__link(href="./index.html") Авторизация
+                    .footer__socials
+                        ul.socials__list
+                            li.socials__item
+                                a.socials__link(href="https://vk.com", target='_blank')
+                                    svg.socials__icon.socials__icon_footer(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                        use(xlink:href="#icon-vk" style="width: 100%;")
+                            li.socials__item
+                                a.socials__link(href="https://vk.com", target='_blank')
+                                    svg.socials__icon.socials__icon_footer(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                        use(xlink:href="#icon-github" style="width: 100%;")
+                            li.socials__item
+                                a.socials__link(href="https://vk.com", target='_blank')
+                                    svg.socials__icon.socials__icon_footer(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                        use(xlink:href="#icon-in" style="width: 100%;")
+                .footer__col.footer__col_right
+                    ul.footer__contacts
+                        li.footer__contacts-item skype_floriel1
+                        li.footer__contacts-item mr-zerx@yandex.ru
+                        li.footer__contacts-item +79223057956
+                        li.footer__contacts-item г. Пермь        
+            p.footer__copyright.copyright © Скородумов Никита | Создано с любовью в LoftSchool | 2018

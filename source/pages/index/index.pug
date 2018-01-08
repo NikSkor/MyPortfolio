@@ -3,10 +3,49 @@ extends ../../base
 block head
     title index page
 block content
-    h1 Главная страница
-    form
-        label(for="email") email
-        input(name="email" id="email")
-        label(for="password") password
-        input(name="password" id="password")
-        button Войти
+    .greeting
+        section.greeting__section.section
+            .greeting__button
+                button.authorization-button Авторизоваться
+            .intro.greeting__intro
+                .intro__owner
+                    .intro__card
+                        .intro__photo
+                            img(class='intro__img' src=require("../../common/images/avatar.jpg"), alt="Веб-разработчик")
+                        .intro__about 
+                            h2.intro__title Никита Скородумов
+                            span.intro__text Личный сайт веб-разработчика
+                    .intro__socials
+                        .socials__intro
+                            ul.socials__list
+                                li.socials__item
+                                    a.socials__link(href="https://vk.com", target='_blank')
+                                        svg.socials__icon.socials__icon-intro(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                            use(xlink:href="#icon-vk" style="width: 100%;")
+                                li.socials__item
+                                    a.socials__link(href="https://vk.com", target='_blank')
+                                        svg.socials__icon.socials__icon-intro(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                            use(xlink:href="#icon-github" style="width: 100%;")
+                                li.socials__item
+                                    a.socials__link(href="https://vk.com", target='_blank')
+                                        svg.socials__icon.socials__icon-intro(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                            use(xlink:href="#icon-in" style="width: 100%;")
+                                //- li.socials__item
+                                //-     a.socials__link(href="", target='_blank')
+                                //-         svg.socials__link_icon
+                                //-             use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="common/images/sprite.svg#github") 
+                                //- li.socials__item
+                                //-     a.socials__link(href="", target='_blank')
+                                //-         svg.socials__link_icon
+                                //-             use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="common/images/sprite.svg#in")             
+                .intro__nav
+                    .menu.intro__menu
+                        ul.menu__list
+                            li.menu__item.menu__item_works 
+                                a.menu__link(href="./my-works.html") Мои работы
+                            li.menu__item.menu__item_about 
+                                a.menu__link(href="./about.html") Обо мне
+                            li.menu__item.menu__item.blog 
+                                a.menu__link(href="./blog.html") Блог
+            .greeting__about
+                span.greeting__text © Скородумов Никита | Создано с любовью в LoftSchool | 2018

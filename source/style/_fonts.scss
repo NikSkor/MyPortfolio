@@ -1,0 +1,181 @@
+$path:'../Fonts/';
+@font-face {
+    font-family: 'robotobold';
+    src: url($path+'roboto-bold-webfont.eot');
+    src: url($path+'roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url($path+'roboto-bold-webfont.woff2') format('woff2'),
+         url($path+'roboto-bold-webfont.woff') format('woff'),
+         url($path+'roboto-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotobold_italic';
+    src: url($path+'roboto-bolditalic-webfont.eot');
+    src: url($path+'roboto-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url($path+'roboto-bolditalic-webfont.woff2') format('woff2'),
+         url($path+'roboto-bolditalic-webfont.woff') format('woff'),
+         url($path+'roboto-bolditalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotoitalic';
+    src: url($path+'roboto-italic-webfont.eot');
+    src: url($path+'roboto-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url($path+'roboto-italic-webfont.woff2') format('woff2'),
+         url($path+'roboto-italic-webfont.woff') format('woff'),
+         url($path+'roboto-italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotolight';
+    src: url($path+'roboto-light-webfont.eot');
+    src: url($path+'roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url($path+'roboto-light-webfont.woff2') format('woff2'),
+         url($path+'roboto-light-webfont.woff') format('woff'),
+         url($path+'roboto-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotolight_italic';
+    src: url($path+'roboto-lightitalic-webfont.eot');
+    src: url($path+'roboto-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url($path+'roboto-lightitalic-webfont.woff2') format('woff2'),
+         url($path+'roboto-lightitalic-webfont.woff') format('woff'),
+         url($path+'roboto-lightitalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url($path+'roboto-medium-webfont.eot');
+    src: url($path+'roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url($path+'roboto-medium-webfont.woff2') format('woff2'),
+         url($path+'roboto-medium-webfont.woff') format('woff'),
+         url($path+'roboto-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotomedium_italic';
+    src: url($path+'roboto-mediumitalic-webfont.eot');
+    src: url($path+'roboto-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url($path+'roboto-mediumitalic-webfont.woff2') format('woff2'),
+         url($path+'roboto-mediumitalic-webfont.woff') format('woff'),
+         url($path+'roboto-mediumitalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url($path+'roboto-regular-webfont.eot');
+    src: url($path+'roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url($path+'roboto-regular-webfont.woff2') format('woff2'),
+         url($path+'roboto-regular-webfont.woff') format('woff'),
+         url($path+'roboto-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'fontawesomeregular';
+    src: url($path+'fontawesome-webfont.eot');
+    src: url($path+'fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+         url($path+'fontawesome-webfont.woff2') format('woff2'),
+         url($path+'fontawesome-webfont.woff') format('woff'),
+         url($path+'fontawesome-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'fontawesomeregular';
+    src: url($path+'fontawesome-webfont-webfont.eot');
+    src: url($path+'fontawesome-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url($path+'fontawesome-webfont-webfont.woff2') format('woff2'),
+         url($path+'fontawesome-webfont-webfont.woff') format('woff'),
+         url($path+'fontawesome-webfont-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'sansus_webissimoregular';
+    src: url($path+'sansus-webissimo-regular-webfont.eot');
+    src: url($path+'sansus-webissimo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url($path+'sansus-webissimo-regular-webfont.woff2') format('woff2'),
+         url($path+'sansus-webissimo-regular-webfont.woff') format('woff'),
+         url($path+'sansus-webissimo-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: "SansusWebissimoRegular";
+    src: url($path+ "SansusWebissimoRegular/SansusWebissimoRegular.eot");
+    src: url($path+"SansusWebissimoRegular/SansusWebissimoRegular.eot?#iefix")format("embedded-opentype"),
+    url($path+"SansusWebissimoRegular/SansusWebissimoRegular.woff") format("woff"),
+    url($path+"SansusWebissimoRegular/SansusWebissimoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "SansusWebissimoItalic";
+    src: url($path+"SansusWebissimoItalic/SansusWebissimoItalic.eot");
+    src: url($path+"SansusWebissimoItalic/SansusWebissimoItalic.eot?#iefix")format("embedded-opentype"),
+    url($path+"SansusWebissimoItalic/SansusWebissimoItalic.woff") format("woff"),
+    url($path+"SansusWebissimoItalic/SansusWebissimoItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

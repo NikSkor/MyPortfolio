@@ -1,0 +1,125 @@
+.greeting {
+    background: url('../common/images/bg-intro.png') center center;
+    background-color: lightblue;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-size: cover;
+}
+.greeting__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.greeting__button {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top:25px;
+    right:100px;
+}
+.authorization-button {
+    display: inline-block;
+    color: $white;
+    list-style-type: none;
+    border: 1px;
+    font-family: 'robotomedium';
+    font-size: 16px;
+    padding: 15px 30px;
+    text-decoration: none;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid $white;
+    transition: .5s all;
+    &:hover {
+        background-color: $blue;
+    }
+}
+.intro {
+    width: 380px;
+    height: 400px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:rgba(22, 37, 66, .7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // overflow: hidden;
+    justify-content: space-between;
+}
+.intro__owner {
+    margin-top: 35px;
+    border: 1px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.intro-title {
+    font-family: 'robotomedium';
+    font-size: 28px;
+
+}
+.intro__socials {
+    margin-top: 30px;
+}
+.intro__nav {
+    align-self: stretch;
+}
+.menu {
+    width: 100%;
+    overflow: hidden;
+}
+.menu__list {
+    min-width: 100%;
+    display: flex;
+}
+.menu__item {
+    width: 100%;
+    white-space: nowrap;
+    font-family: 'robotomedium';
+    font-size: 16px;
+    background-color: #0548be;
+    padding: 14px 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .8s all;
+    border-right: 2px solid #7296d3;
+
+    &:last-child {
+        border: 2px solid transparent;
+    }
+    
+    &:hover {
+        background-color: #083c96;
+        
+    }
+}
+.greeting__about {
+    position: absolute;
+    bottom: 3%;
+}
+.greeting__text {
+    display: block;
+    font-family: 'robotolight';
+    font-size: 16px;
+    color: rgba(255, 255, 255, .6);
+}
+.socials__icon-intro {
+    fill: #0a44aa;
+    fill-opacity: .5;
+    transition: all .5s;
+    &:hover {
+        fill: #004cd1;
+        fill-opacity: 1;
+    }
+}
+.menu__link {
+    text-decoration: none;
+    color: $white;
+}

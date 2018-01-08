@@ -1,2 +1,14 @@
 import 'normalize.css';
-import './index.scss';
+import '../../style/style.scss';
+import './index.pug';
+import '../../scripts/sprites.js';
+
+
+// import frost from '../../scripts/parallax';
+
+
+
+// const f = frost();
+// console.log(f);
+// const z= document.querySelector('.intro__text');
+// z.textContent=f;
