@@ -43,17 +43,59 @@ block content
                         polygon.down__triangle_right(points="1000,0 1000,86 500,86 500,75.5")
                 .down-block
                     h2.down__title Мои работы
+                    .title__pic
+                        svg.title__svg(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                use(xlink:href="#icon-stars2" style="width: 100%;")
         section.works-content
             .works__block
                 .works__left
                     .works__promotion.promotion
-                        h3.promotion__title
-                        span.promotion__tech
+                        h3.promotion__title Сайт школы онлайн образования
+                        span.promotion__tech html, css, javascript
                         button.promotion__button.prombutton
-                            svg.
-                            span.prombutton__text
-                .works__right
-            .works__review
+                            svg.prombutton__svg(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                use(xlink:href="#icon-link" style="width: 100%;")
+                            span.prombutton__text Посмотреть сайт
+                .works__right.slider
+                    .slider__menu
+                        .slider__big
+                            .slider__pic
+                                img(class='slider__big_one' src=require("../../common/images/work-2.png"), alt="Сайт")
+                        .slider__control
+                            .slider__down
+                                a.slider__button.slider__button_down(href="#")
+                                    svg.slider__arrow(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                        use(xlink:href="#icon-arrow_down" style="width: 100%;")
+                                ul.slider__list
+                                    li.slider__item.slider__item_on
+                                        img(class='slider__img' src=require("../../common/images/work-1.png"), alt="Сайт")
+                                    li.slider__item
+                                        img(class='slider__img' src=require("../../common/images/work-2.png"), alt="Сайт")
+                                    li.slider__item
+                                        img(class='slider__img' src=require("../../common/images/work-3.png"), alt="Сайт")
+                                    li.slider__item
+                                        img(class='slider__img' src=require("../../common/images/work-4.png"), alt="Сайт")
+                            .slider__up
+                                a.slider__button.slider__button_up(href="#")
+                                    svg.slider__arrow(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                        use(xlink:href="#icon-arrow_down" style="width: 100%;")
+                                ul.slider__list
+                                    li.slider__item
+                                        img(class='slider__img' src=require("../../common/images/work-1.png"), alt="Сайт")
+                                    li.slider__item
+                                        img(class='slider__img' src=require("../../common/images/work-2.png"), alt="Сайт")
+                                    li.slider__item
+                                        img(class='slider__img' src=require("../../common/images/work-3.png"), alt="Сайт")
+                                    li.slider__item.slider__item_on
+                                        img(class='slider__img' src=require("../../common/images/work-4.png"), alt="Сайт")
+            .works__review.review
+                .review__about-me
+                    h2.down__title.review__title Что обо мне говорят
+                .review_comments.comments
+                    .comments__left
+                        
+                .review_form.form
+                .review_arrow
         footer.footer
             .footer__container
                 .footer__col.footer__col_left
