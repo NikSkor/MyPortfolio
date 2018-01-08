@@ -91,11 +91,43 @@ block content
             .works__review.review
                 .review__about-me
                     h2.down__title.review__title Что обо мне говорят
+                    svg.review__svg(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                use(xlink:href="#icon-stars3" style="width: 100%;")
                 .review_comments.comments
-                    .comments__left
-                        
+                    ul.comments__list
+                        li.comments__item
+                            .comments__pic
+                                img.comments__img(src=require("../../common/images/koval_1.png"), alt="Сайт")
+                            .comments__text.comtext
+                                p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 5 месяцев только самых тяжелых испытаний и бессонных ночей!
+                                span.comtext__name Ковальчук Дмитрий
+                                span.comtext__position - основатель Loftschool
+                        li.comments__item
+                            .comments__pic
+                                img.comments__img(src=require("../../common/images/sab.jpg"), alt="Сайт")
+                            .comments__text.comtext
+                                p Этот код выдержит любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                                span.comtext__name Сабанцев Владимир
+                                span.comtext__position - преподаватель
+
                 .review_form.form
-                .review_arrow
+                    .form__block
+                        .form__rows
+                            .form__up
+                                h2.form__title связаться со мной
+                            .form__input
+                                input.form__input-text(type="text" id="name" name="name" placeholder="Ваше имя")
+                            .form__input
+                                input.form__input-text(type="text" id="email" name="email" placeholder="Ваш e-mail")
+                            .form__input
+                                textarea.form__input-text.form__input-textarea(type="textarea" id="message" name="message" placeholder="Ваше сообщение")
+                        .form__buttons
+                            button.form__btn.form__btn_send(type="submit") Отправить
+                            button.form__btn.form__btn_clear(type="reset") Очистить
+                .rev-arrow
+                    a.rev-arrow__link
+                        svg.arrow__svg(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                            use(xlink:href="#icon-arrow_down" style="width: 100%;")
         footer.footer
             .footer__container
                 .footer__col.footer__col_left
