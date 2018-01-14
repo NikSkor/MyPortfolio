@@ -4,6 +4,7 @@ $grey: #999999;
 $blue: #083c96;
 $cream: #faf8f0;
 
+@import './_media.scss';
 @import './_fonts.scss';
 @import './_base.scss';
 @import './sections/_header.scss';
