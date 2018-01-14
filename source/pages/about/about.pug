@@ -50,7 +50,7 @@ block content
                                 use(xlink:href="#icon-stars2" style="width: 100%; min-height:100%;" class='about__stars')
                     .about__left-content
                         .about__left_img
-                            img.about__img( src=require("../../common/images/avatar2.jpg"), alt="Веб-разработчик")
+                            img.about__img(src=require("../../common/images/avatar2.jpg"), alt="Веб-разработчик")
                         .about__left_info
                             h2.about__title.about__left_title Кто я
                         .about__left_text
@@ -126,6 +126,7 @@ block content
                                                 circle.circle__second.circle-5(r="45" cx="50%" cy="50%" transform="rotate(-90 55 55)")
                                             span.circle__title Bower   
             .about-map.map
+
                 .map__contacts
                     .map__info
                         h2.about__title.map__title Контакты
@@ -151,6 +152,7 @@ block content
                                     svg.map__icon(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
                                         use(xlink:href="#icon-map_n" style="width: 100%;")
                                     a.map__owner(href="#Пермь") г. Пермь
+                .map__google(id="map")
         footer.footer
             .footer__container
                 .footer__col.footer__col_left
@@ -187,3 +189,4 @@ block content
                         li.footer__contacts-item +79223057956
                         li.footer__contacts-item г. Пермь        
             p.footer__copyright.copyright © Скородумов Никита | Создано с любовью в LoftSchool | 2018
+            script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBVE2BPmabi29Aw4w3gZmc4pZ8FPw5p5Fs&callback=initMap' async defer)

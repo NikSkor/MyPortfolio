@@ -147,7 +147,18 @@ module.exports = {
                 options: {
                     name: 'Fonts/[name].[ext]'
                 }
-            }                                    
+            },
+            {
+                test: /\.(mov|mp4)$/,
+                use: [
+                  {
+                    loader: 'file-loader',
+                    options: {
+                      name: 'common/images/[name].[ext]'
+                    }  
+                  }
+                ]
+              }                                    
         ]
     }
 };
