@@ -1,21 +1,21 @@
 .hamburger-menu {
     position: absolute;
-    top: 28px;
-    right: 30px;
+    top: 2vw;
+    right: 2vw;
 }
 .hamburger__line-block {
-    width: 40px;
-    height: 35px;
+    width: rem(40px);
+    height: rem(35px);
     display: flex;
     flex-direction: column;
     cursor: pointer;
     justify-content: space-between;
 }
 .hamburger-menu__line {
-    width: 40px;
-    height: 5px;
+    width: rem(40px);
+    height: rem(5px);
     background: $white;
     display: inline-block;
-    border-radius: 2px;
+    border-radius: rem(2px);
 
 }

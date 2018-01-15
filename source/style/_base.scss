@@ -1,6 +1,18 @@
 * {
     box-sizing: border-box;
 }
+html {
+    font-size: 16px;
+    @include pc {
+        font-size: 14px;
+    }
+    @include tablets {
+        font-size: 12px;
+    }
+    @include phones {
+        font-size: 11px;
+    }
+}
 body {
     margin: 0;
     line-height: 1.42;
@@ -14,6 +26,9 @@ body {
     overflow: hidden;
     display: flex;
     justify-content: center;
+    // position: relative;
+  
+    
 }
 ul,li {
    list-style-type: none;
@@ -26,7 +41,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .container {
     width: 100%;
-    min-width: 1800px;
+    width: rem(1800px);
     padding: 0;
     margin: 0 auto;
     display: grid;
@@ -37,7 +52,17 @@ h1,h2,h3,h4,h5,h6 {
     grid-template-areas:
         "blockHeader"
         "blockContent"
-        "blockFooter"
+        "blockFooter";
+
+        @include pc {
+            min-width: rem(1200px);
+        }
+        @include tablets {
+            min-width: rem(768px);
+        }
+        @include phones {
+            min-width: rem(420px);
+        }
 }
 .large-container {
     display: grid;

@@ -6,14 +6,14 @@
 }
 .title-owner {
     font-family: 'sansus_webissimoregular';
-    font-size: 63px;
+    font-size: rem(63px);
 }
 .intro__photo {
-    width: 142px;
-    height: 142px;
+    width: rem(142px);
+    height: rem(142px);
     border-radius: 50%;
     overflow: hidden;
-    margin-bottom: 15px;
+    margin-bottom: rem(15px);
     z-index: 100;
 }
 .intro__img {
@@ -29,7 +29,7 @@
 }
 .intro__text {
     font-family: 'robotoregular';
-    font-size: 16px;
+    font-size: rem(16px);
 }
 .intro__title, .intro__text {
     color: $white;
@@ -37,8 +37,8 @@
     z-index: 100;
 }
 .owner__bg {
-    width: 445px;
-    height: 300px;
+    width: rem(445px);
+    height: rem(300px);
     fill: $white;
     opacity: .2;
     position: absolute;
