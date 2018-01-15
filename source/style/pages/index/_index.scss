@@ -4,6 +4,7 @@
     width: 100vw;
     height: 100vh;
     position: absolute;
+    overflow: hidden;
     // background-size: cover;
 }
 .video {
@@ -18,6 +19,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+    
 }
 .layer-one {
     width: 100%;
@@ -32,7 +34,7 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 110%;
+    width: 100%;
 }
 .greeting__section {
     display: flex;
@@ -63,6 +65,20 @@
         background-color: $blue;
     }
 }
+.intro__block {
+    transform: rotateY(0deg);
+    background-color:rgba(22, 37, 66, .7);
+    transform-style: preserve-3d;
+    transition: .3s linear;
+    position: relative;
+    height: 100%;
+}
+.intro__owner_face {
+    padding-top: rem(30px);
+    backface-visibility: hidden;
+    transform: rotateY(0);
+    
+}
 .authorization-button_clear {
     display: none;
 }
@@ -74,7 +90,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color:rgba(22, 37, 66, .7);
+    
 //     display: flex;
 //     flex-direction: column;
 //     align-items: center;
@@ -86,20 +102,32 @@
     border: rem(1px);
     width: 100%;
     height: 100%;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
-.intro__owner_active  {
-    display: flex;
-}
+// .intro__owner_active  {
+//     display: flex;
+// }
 .intro-title {
     font-family: 'robotomedium';
     font-size: rem(28px);
 
 }
+.logform {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin-top: rem(25px);
+}
+
 .intro__socials {
     margin-top: rem(30px);
+    margin-bottom: rem(10px);
 }
 .logform__form {
     // height: 100%;
@@ -248,8 +276,8 @@
 }
 .intro__nav {
     // align-self: stretch;
-    position: absolute;
-    bottom: 0;
+    // position: absolute;
+    // bottom: 9%;
     width: 100%;
 }
 .menu {
