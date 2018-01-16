@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="common/images/favicon.ico">
+    <title>index page</title>
+  <link href="./css/common.css" rel="stylesheet"></head>
+  <body>
+    <div class="wrapper">
+      <div class="greeting">
+        <video class="video" autoplay loop muted>
+          <source class="source" src="./common/images/night.mp4" type="video/mp4">
+        </video>
+        <div class="parallax">
+          <div class="layer-one"><img class="parallax__img" src="common/images/bg-p.png" alt="Параллакс"></div>
+        </div>
+        <section class="greeting__section section">
+          <div class="greeting__button">
+            <button class="authorization-button" id="authorization-button">Авторизоваться</button>
+          </div>
+          <div class="intro greeting__intro">
+            <div class="intro__block">
+              <div class="intro__owner intro__owner_face">
+                <div class="intro__card">
+                  <div class="intro__photo"><img class="intro__img" src="common/images/avatar.jpg" alt="Веб-разработчик"></div>
+                  <div class="intro__about"> 
+                    <h2 class="intro__title">Никита Скородумов</h2><span class="intro__text">Личный сайт веб-разработчика</span>
+                  </div>
+                </div>
+                <div class="intro__socials">
+                  <div class="socials__intro">
+                    <ul class="socials__list">
+                      <li class="socials__item"><a class="socials__link" href="https://vk.com" target="_blank">
+                          <svg class="socials__icon socials__icon-intro" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="#icon-vk" style="width: 100%;"></use>
+                          </svg></a></li>
+                      <li class="socials__item"><a class="socials__link" href="https://vk.com" target="_blank">
+                          <svg class="socials__icon socials__icon-intro" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="#icon-github" style="width: 100%;"></use>
+                          </svg></a></li>
+                      <li class="socials__item"><a class="socials__link" href="https://vk.com" target="_blank">
+                          <svg class="socials__icon socials__icon-intro" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <use xlink:href="#icon-in" style="width: 100%;">           </use>
+                          </svg></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="intro__nav">
+                  <div class="menu intro__menu">
+                    <ul class="menu__list">
+                      <li class="menu__item menu__item_works"> <a class="menu__link" href="./my-works.html">Мои работы</a></li>
+                      <li class="menu__item menu__item_about"> <a class="menu__link" href="./about.html">Обо мне</a></li>
+                      <li class="menu__item menu__item blog"> <a class="menu__link" href="./blog.html">Блог</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="intro__owner logform" id="intro-back">
+                <h2 class="logform__title">авторизуйтесь</h2>
+                <div class="logform__form">
+                  <div class="logform__row">
+                    <label class="logform__label logform__label_text" for="name">
+                      <svg class="logform__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <use xlink:href="#icon-login" style="width: 100%;"></use>
+                      </svg>
+                    </label>
+                    <input class="logform__input" type="text" name="name" id="name" placeholder="Логин" required>
+                  </div>
+                  <div class="logform__row">
+                    <label class="logform__label logform__label_text" for="password">
+                      <svg class="logform__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <use xlink:href="#icon-password" style="width: 100%;"></use>
+                      </svg>
+                    </label>
+                    <input class="logform__input" type="password" name="password" id="password" placeholder="Пароль" required>
+                  </div>
+                  <div class="logform__row">
+                    <input class="logform__checkbox" type="checkbox" name="check" id="check">
+                    <label class="logform__label logform__label_check" for="check">Я человек</label>
+                  </div>
+                  <div class="logform__row logform__row_radio">
+                    <div class="radio__title">Вы точно не робот?</div>
+                    <div class="radio__form">
+                      <div class="radio__column">
+                        <input class="radio__input" type="radio" name="radio" id="radio-yes">
+                        <label class="radio__label" for="radio-yes">Да</label>
+                      </div>
+                      <div class="radio__column">
+                        <input class="radio__input" type="radio" name="radio" id="radio-no">
+                        <label class="radio__label" for="radio-no">Не уверен</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="intro__nav">
+                  <div class="menu intro__menu">
+                    <ul class="menu__list">
+                      <li class="menu__item menu__item_works" id="back-button"> <a class="menu__link menu__link_btn" href="./my-works.html">На главную</a></li>
+                      <li class="menu__item menu__item blog"> <a class="menu__link" href="./blog.html">Войти</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="greeting__about"><span class="greeting__text">© Скородумов Никита | Создано с любовью в LoftSchool | 2018</span></div>
+        </section>
+      </div>
+    </div>
+  <script type="text/javascript" src="./js/common.js"></script><script type="text/javascript" src="./js/index.js"></script></body>
+</html>
