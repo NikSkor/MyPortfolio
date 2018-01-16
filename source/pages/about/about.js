@@ -3,4 +3,4 @@ import '../../style/style.scss';
 import './about.pug';
 import '../../scripts/sprites.js';
 import '../../scripts/map.js';
-
+import '../../scripts/menu.js';

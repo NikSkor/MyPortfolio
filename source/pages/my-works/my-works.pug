@@ -4,6 +4,16 @@ block head
     title Мои работы
 block content
     .container.large-container
+        .greeting__menu(id="hamburger-menu")
+            ul.greeting__menu_list
+                li.greeting__menu_item
+                    a.greeting__menu_link(href="./my-works.html") Мои работы
+                li.greeting__menu_item
+                    a.greeting__menu_link(href="./about.html") Обо мне
+                li.greeting__menu_item
+                    a.greeting__menu_link(href="./blog.html") Блог
+                li.greeting__menu_item
+                    a.greeting__menu_link(href="./index.html") Авторизоваться
         header.header
             .socials
                 ul.socials__list
@@ -20,10 +30,12 @@ block content
                             svg.socials__icon(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
                                 use(xlink:href="#icon-in" style="width: 100%;")
             .hamburger-menu(id='hamburgerButton')
-                .hamburger__line-block(id='LineBlock')
-                    span.hamburger-menu__line(id='line_1')
-                    span.hamburger-menu__line(id='line_2')
-                    span.hamburger-menu__line(id='line_3')
+                .hamburger-menu__picture
+                    svg.hamburger-menu__pic(id="hamburger-plus" xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                        use(xlink:href="#icon-plus" style="width: 100%;")
+                .hamburger__line-block
+                    svg.hamburger-menu__pic.hamburger-menu__pic_active(id="lineBlock" xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                        use(xlink:href="#icon-hamburger" style="width: 100%;")
             .arrow-down.works__arrow
                 a.arrow__link(href="#")
                     svg.arrow__svg(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
