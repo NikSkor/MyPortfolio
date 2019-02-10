@@ -14,7 +14,7 @@ const PATHS = {
     build: path.join(__dirname, 'build')
 };
 
-let sourcemap, watcher
+let sourcemap, watcher;
 
 if (process.env.NODE_ENV=='dev') {
     sourcemap = 'source-maps'
