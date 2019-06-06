@@ -4,6 +4,11 @@ $grey: #999999;
 $blue: #083c96;
 $cream: #faf8f0;
 
+$pc: 1200px;
+$tablets: 768px;
+$phones: 320px;
+
+@import './_media.scss';
 @import './_fonts.scss';
 @import './_base.scss';
 @import './sections/_header.scss';

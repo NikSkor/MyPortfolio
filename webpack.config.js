@@ -14,7 +14,7 @@ const PATHS = {
     build: path.join(__dirname, 'build')
 };
 
-let sourcemap, watcher
+let sourcemap, watcher;
 
 if (process.env.NODE_ENV=='dev') {
     sourcemap = 'source-maps'
@@ -147,7 +147,18 @@ module.exports = {
                 options: {
                     name: 'Fonts/[name].[ext]'
                 }
-            }                                    
+            },
+            {
+                test: /\.(mov|mp4)$/,
+                use: [
+                  {
+                    loader: 'file-loader',
+                    options: {
+                      name: 'common/images/[name].[ext]'
+                    }  
+                  }
+                ]
+              }                                    
         ]
     }
 };

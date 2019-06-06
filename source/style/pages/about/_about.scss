@@ -2,12 +2,15 @@
     display: flex;
     width: 100%;
 }
+.about-content {
+    position: relative;
+}
 .about__left {
     background-color: #f2f0e8;
     width: 50%;
     display: flex;
     // flex-direction: column;
-    padding-left: 120px;
+    padding-left: rem(120px);
     position: relative;
 }
 .about__left-title {
@@ -25,8 +28,8 @@
     fill:#eae8e2;
 }
 .about__left_img {
-    width: 445px;
-    height: 400px;
+    width: rem(445px);
+    height: rem(400px);
     overflow: hidden;
     z-index: 100;
 }
@@ -35,7 +38,7 @@
 }
 .about__title {
     font-family: 'sansus_webissimoregular';
-    font-size: 63px;
+    font-size: rem(63px);
     color: #474b57;
 }
 
@@ -43,8 +46,8 @@
     fill: #dbe0e6;
     stroke: #dbe0e6;
     transition: all .5s;
-    width: 260px;
-    height: 170px;
+    width: rem(260px);
+    height: rem(170px);
     position: absolute;
     transform: rotate(180deg);
     bottom: 82%;
@@ -59,19 +62,19 @@
 }
 .about__left_info {
     align-self: center;
-    margin-bottom: 35px;
+    margin-bottom: rem(35px);
 }
 .about__left_title {
-    font-size: 35px;
+    font-size: rem(35px);
     display: inline-block;
     text-align: center;
-    padding: 25px 10px;
+    padding: rem(25px) rem(10px);
     position: relative;
      &:after {
         content: '';
         display: block;
-        height: 3px;
-        width: 90px;
+        height: rem(3px);
+        width: rem(90px);
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -82,28 +85,28 @@
 }
 .about__left_text {
     font-family: 'robotoregular';
-    font-size: 16px;
+    font-size: rem(16px);
     color: #474b57;
-    margin-bottom: 120px;
+    margin-bottom: rem(120px);
 }
 .about__right {
     background-color: #eae8e2;
     width: 50%;
-    padding-left: 36px;
-    padding-right: 130px;
+    padding-left: rem(36px);
+    padding-right: rem(130px);
 }
 .about__right_title {
     text-align: center;
     position: relative;
-    font-size: 35px;
+    font-size: rem(35px);
     font-family: 'sansus_webissimoregular';
     color: #474b57;
-    padding-bottom: 30px;
+    padding-bottom: rem(30px);
     &:after {
         content: '';
         display: block;
-        height: 3px;
-        width: 90px;
+        height: rem(3px);
+        width: rem(90px);
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -113,16 +116,16 @@
 }
 .about__right_text {
     font-family: 'robotoregular';
-    font-size: 16px;
+    font-size: rem(16px);
     color: #474b57;
-    margin-top: 30px;
+    margin-top: rem(30px);
 }
 .skills__list_item {
-    margin-bottom: 40px;
+    margin-bottom: rem(40px);
 }
 .skills__title {
     font-family: 'robotomedium';
-    font-size: 28px;
+    font-size: rem(28px);
     color: #474b57;
 }
 .circle {
@@ -132,12 +135,12 @@
     position: relative;
 }
 .circle__svg {
-    width: 122px;
-    height: 122px;
+    width: rem(122px);
+    height: rem(122px);
     fill: transparent;
-    stroke-width: 20px;
-    margin-right: 40px;
-    margin-top: 15px;
+    stroke-width: rem(20px);
+    margin-right: rem(40px);
+    margin-top: rem(15px);
 
     &:last-child {
         margin-right: 0;
@@ -152,9 +155,9 @@
     stroke: #91aad4;
 }
 .circle__title {
-    width: 70px;
+    width: rem(70px);
     font-family: 'robotomedium';
-    font-size: 14px;
+    font-size: rem(14px);
     color: #243994;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -249,34 +252,45 @@
  .about-map {
     width: 100%;
     height: 100vh;
-    background: url('../common/images/bg-map.png') no-repeat center center;
-    background-color: lightblue;
+    // background: url('../common/images/bg-map.png') no-repeat center center;
+    // background-color: lightblue;
     background-size: cover;
     position: relative;
  }
+ .map__google {
+     width: 100%;
+     height: 100%;
+     z-index: 1;
+     position: relative;
+     overflow: hidden;
+ }
+ .map__face {
+     position: absolute;
+ }
  .map__contacts {
-     width: 580px;
+     width: rem(580px);
      background-color: rgba(255, 255, 255, 0.5);
      position: absolute;
      transform: translate(-50%, -50%);
      top: 50%;
      left: 50%;
-     padding: 40px 20px 10px 20px;
+     padding: rem(40px) rem(20px) rem(10px) rem(20px);
+     z-index: 10;
 
 }
 .map__info {
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
 }
 .map__title {
-    font-size: 35px;
+    font-size: rem(35px);
     text-align: center;
     position: relative;
-    padding-bottom: 30px;
+    padding-bottom: rem(30px);
      &:after {
         content: '';
         display: block;
-        height: 3px;
-        width: 90px;
+        height: rem(3px);
+        width: rem(90px);
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -285,14 +299,14 @@
     }
  }
 .map__icon {
-    width: 45px;
-    height: 45px;
+    width: rem(45px);
+    height: rem(45px);
     fill: #024dd1;
-    margin-right: 10px;
+    margin-right: rem(10px);
  }
  .map__owner {
     font-family: 'robotomedium';
-    font-size: 16px;
+    font-size: rem(16px);
     color: #474b57;
     text-decoration: none;
  }
@@ -304,7 +318,7 @@
 .map__item {
     width: 50%;
     white-space: nowrap;
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
 
     &:last-child {
         margin-bottom: 0;
@@ -318,8 +332,8 @@
     display: block;
 }
 .arrow__svg {
-    width: 25px;
-    height: 20px;
+    width: rem(25px);
+    height: rem(20px);
     fill: #c9c8cc;
     transition: all .4s;
 
@@ -332,5 +346,5 @@
     transform: translate(-50%, -50%);
     top: 85%;
     left: 50%;
-    z-index: 200;
+    z-index: 190;
 }

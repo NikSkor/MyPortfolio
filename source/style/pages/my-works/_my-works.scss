@@ -24,9 +24,9 @@
 .down__title {
     font-family: 'sansus_webissimoregular';
     text-align: center;
-    font-size: 63px;
+    font-size: rem(63px);
     color: $white;
-    padding: 10px 0 40px 0;
+    padding: rem(10px) 0 rem(40px) 0;
     margin: 0;
 }
 .works__owner {
@@ -42,8 +42,8 @@ top: 70%;
     transform: translate(-50%, -50%);
 }
 .title__svg {
-    width: 250px;
-    height: 140px;
+    width: rem(250px);
+    height: rem(140px);
     fill: #3b3f4b;
     stroke: #3b3f4b;
     transition: all .5s;
@@ -81,18 +81,18 @@ top: 70%;
 }
 .promotion__title {
     font-family: 'sansus_webissimoregular';
-    font-size: 35px;
+    font-size: rem(35px);
     color: #474b57;
     text-align: center;
     position: relative;
-    padding-bottom: 30px;
+    padding-bottom: rem(30px);
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
      &:after {
         content: '';
         display: block;
-        height: 3px;
-        width: 90px;
+        height: rem(3px);
+        width: rem(90px);
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -102,26 +102,26 @@ top: 70%;
 }
 .promotion__tech {
     font-family: 'robotomedium';
-    font-size: 16px;
+    font-size: rem(16px);
     color: #004cd1;
     text-transform: uppercase;
-    margin-bottom: 60px;
+    margin-bottom: rem(60px);
 }
 .prombutton__svg {
-    width: 21px;
-    height: 21px;
+    width: rem(21px);
+    height: rem(21px);
     fill: $white;
-    margin-right: 10px;
+    margin-right: rem(10px);
 }
 .prombutton {
     display: flex;
     align-items: center;
     background-color: #004cd1;
     font-family: 'robotomedium';
-    font-size: 16px;
+    font-size: rem(16px);
     color: $white;
-    padding: 10px 20px 10px 15px;
-    border: 1px solid transparent;
+    padding: rem(10px) rem(20px) rem(10px) rem(15px);
+    border: rem(1px) solid transparent;
     cursor: pointer;
 }
 .works__right {
@@ -141,7 +141,7 @@ top: 70%;
 .slider__pic {
     width: 100%;
     height: 100%;
-    padding: 60px 0;
+    padding: rem(60px) 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -196,7 +196,7 @@ top: 70%;
 .slider__item {
     width: 100%;
     text-align: center;
-    padding: 10px;
+    padding: rem(10px);
     overflow: hidden;
     display: none;
 }
@@ -209,8 +209,8 @@ top: 70%;
     width: 45%;
 }
 .slider__arrow {
-    width: 45px;
-    height: 30px;
+    width: rem(45px);
+    height: rem(30px);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -239,14 +239,14 @@ top: 70%;
 }
 .review__about-me {
     text-align: center;
-    max-width: 380px;
-    padding-top: 70px;
+    max-width: rem(380px);
+    padding-top: rem(70px);
     line-height: 1.1;
     position: relative;
 }
 .review__svg {
-    width: 175px;
-    height: 200px;
+    width: rem(175px);
+    height: rem(200px);
     transform: rotate(25deg);
     fill: #363d49;
     stroke: #363d49;
@@ -266,15 +266,15 @@ top: 70%;
     display: flex;
 }
 .comments__item {
-    max-width: 380px;
+    max-width: rem(380px);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: rem(10px);
 }
 .comments__pic {
-    height: 80px;
-    width: 80px;
+    height: rem(80px);
+    width: rem(80px);
     border-radius: 50%;
     overflow: hidden;
 }
@@ -283,14 +283,14 @@ top: 70%;
 }
 .comtext {
     font-family: 'robotoitalic';
-    font-size: 16px;
+    font-size: rem(16px);
     color: $white;
 }
 .comtext__name {
     font-family: 'robotobold_italic';
     display: block;
     text-align: center;
-    margin-top: 30px;
+    margin-top: rem(30px);
 }
 .comtext__position {
     font-family: 'robotoitalic';
@@ -298,32 +298,32 @@ top: 70%;
     text-align: center;
 }
 .review_form {
-    max-width: 380px;
+    max-width: rem(380px);
     background: rgba(29, 32, 32, .6);
 }
 .form {
-    margin-top: 60px;
-    margin-bottom: 155px;
+    margin-top: rem(60px);
+    margin-bottom: rem(155px);
 
 }
 .form__up {
     text-align: center;
-    padding: 30px 0;
+    padding: rem(30px) 0;
 }
 .form__title {
     font-family: 'fontawesomeregular';
-    font-size: 28px;
+    font-size: rem(28px);
     color: $white;
     white-space: nowrap;
     position: relative;
-    padding-bottom: 30px;
+    padding-bottom: rem(30px);
     text-transform: uppercase;
     text-align: center;
      &:after {
         content: '';
         display: block;
-        height: 3px;
-        width: 90px;
+        height: rem(3px);
+        width: rem(90px);
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -332,31 +332,31 @@ top: 70%;
     }
 }
 .form__rows {
-    padding: 0 20px;
+    padding: 0 rem(20px);
 }
 .form__input {
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
 }
 .form__input-text {
     width: 100%;
-    padding: 15px;
-    border: 1px solid transparent;
+    padding: rem(15px);
+    border: rem(1px) solid transparent;
     background-color: rgba(43, 41, 45, .6);
     color: #979999;
 }
 .form__input-textarea {
     resize: none;
-    height: 130px;
+    height: rem(130px);
 }
 .form__buttons {
     display: flex;
 }
 .form__btn {
     font-family: 'robotomedium';
-    font-size: 16px;
+    font-size: rem(16px);
     width: 50%;
     border: none;
-    padding: 15px 0;
+    padding: rem(15px) 0;
     cursor: pointer;
 }
 .form__btn_send {

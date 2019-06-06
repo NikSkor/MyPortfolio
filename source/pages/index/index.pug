@@ -4,48 +4,79 @@ block head
     title index page
 block content
     .greeting
+        video.video(autoplay loop muted)
+            source.source(src="./common/images/night.mp4" type="video/mp4")
+        .parallax
+            .layer-one
+                img.parallax__img(src=require("../../common/images/bg-p.png") alt="Параллакс")
         section.greeting__section.section
             .greeting__button
-                button.authorization-button Авторизоваться
+                button.authorization-button(id="authorization-button") Авторизоваться
             .intro.greeting__intro
-                .intro__owner
-                    .intro__card
-                        .intro__photo
-                            img(class='intro__img' src=require("../../common/images/avatar.jpg"), alt="Веб-разработчик")
-                        .intro__about 
-                            h2.intro__title Никита Скородумов
-                            span.intro__text Личный сайт веб-разработчика
-                    .intro__socials
-                        .socials__intro
-                            ul.socials__list
-                                li.socials__item
-                                    a.socials__link(href="https://vk.com", target='_blank')
-                                        svg.socials__icon.socials__icon-intro(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
-                                            use(xlink:href="#icon-vk" style="width: 100%;")
-                                li.socials__item
-                                    a.socials__link(href="https://vk.com", target='_blank')
-                                        svg.socials__icon.socials__icon-intro(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
-                                            use(xlink:href="#icon-github" style="width: 100%;")
-                                li.socials__item
-                                    a.socials__link(href="https://vk.com", target='_blank')
-                                        svg.socials__icon.socials__icon-intro(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
-                                            use(xlink:href="#icon-in" style="width: 100%;")
-                                //- li.socials__item
-                                //-     a.socials__link(href="", target='_blank')
-                                //-         svg.socials__link_icon
-                                //-             use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="common/images/sprite.svg#github") 
-                                //- li.socials__item
-                                //-     a.socials__link(href="", target='_blank')
-                                //-         svg.socials__link_icon
-                                //-             use(xmlns:xlink="http://www.w3.org/1999/xlink", xlink:href="common/images/sprite.svg#in")             
-                .intro__nav
-                    .menu.intro__menu
-                        ul.menu__list
-                            li.menu__item.menu__item_works 
-                                a.menu__link(href="./my-works.html") Мои работы
-                            li.menu__item.menu__item_about 
-                                a.menu__link(href="./about.html") Обо мне
-                            li.menu__item.menu__item.blog 
-                                a.menu__link(href="./blog.html") Блог
+                .intro__block
+                    .intro__owner.intro__owner_face
+                        .intro__card
+                            .intro__photo
+                                img(class='intro__img' src=require("../../common/images/avatar.jpg"), alt="Веб-разработчик")
+                            .intro__about 
+                                h2.intro__title Никита Скородумов
+                                span.intro__text Личный сайт веб-разработчика
+                        .intro__socials
+                            .socials__intro
+                                ul.socials__list
+                                    li.socials__item
+                                        a.socials__link(href="https://vk.com", target='_blank')
+                                            svg.socials__icon.socials__icon-intro(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                                use(xlink:href="#icon-vk" style="width: 100%;")
+                                    li.socials__item
+                                        a.socials__link(href="https://vk.com", target='_blank')
+                                            svg.socials__icon.socials__icon-intro(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                                use(xlink:href="#icon-github" style="width: 100%;")
+                                    li.socials__item
+                                        a.socials__link(href="https://vk.com", target='_blank')
+                                            svg.socials__icon.socials__icon-intro(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                                use(xlink:href="#icon-in" style="width: 100%;")            
+                        .intro__nav
+                            .menu.intro__menu
+                                ul.menu__list
+                                    li.menu__item.menu__item_works 
+                                        a.menu__link(href="./my-works.html") Мои работы
+                                    li.menu__item.menu__item_about 
+                                        a.menu__link(href="./about.html") Обо мне
+                                    li.menu__item.menu__item.blog 
+                                        a.menu__link(href="./blog.html") Блог
+                    .intro__owner.logform(id="intro-back")
+                        h2.logform__title авторизуйтесь
+                        .logform__form
+                            .logform__row
+                                label.logform__label.logform__label_text(for="name")
+                                    svg.logform__image(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                        use(xlink:href="#icon-login" style="width: 100%;")
+                                input.logform__input(type="text" name="name" id="name" placeholder="Логин" required)
+                            .logform__row
+                                label.logform__label.logform__label_text(for="password")
+                                    svg.logform__image(xmlns="http://www.w3.org/2000/svg",xmlns:xlink="http://www.w3.org/1999/xlink")
+                                        use(xlink:href="#icon-password" style="width: 100%;")
+                                input.logform__input(type="password" name="password" id="password" placeholder="Пароль" required)
+                            .logform__row
+                                input.logform__checkbox(type="checkbox" name="check" id="check")
+                                label.logform__label.logform__label_check(for="check") Я человек
+                            .logform__row.logform__row_radio
+                                .radio__title Вы точно не робот?
+                                .radio__form
+                                    .radio__column
+                                        input.radio__input(type="radio" name="radio" id="radio-yes")
+                                        label.radio__label(for="radio-yes") Да
+                                    .radio__column
+                                        input.radio__input(type="radio" name="radio" id="radio-no")
+                                        label.radio__label(for="radio-no") Не уверен
+                        .intro__nav
+                            .menu.intro__menu
+                                    ul.menu__list
+                                        li.menu__item.menu__item_works(id="back-button") 
+                                            a.menu__link.menu__link_btn(href="./my-works.html") На главную
+                                        li.menu__item.menu__item.blog 
+                                            a.menu__link(href="./blog.html") Войти
+
             .greeting__about
                 span.greeting__text © Скородумов Никита | Создано с любовью в LoftSchool | 2018
